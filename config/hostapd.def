@@ -1,0 +1,3 @@
+# Created by AnglerBerry - https://github.com/cinemapub/AnglerBerry
+#
+DAEMON_CONF="/etc/hostapd/hostapd.conf"

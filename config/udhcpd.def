@@ -1,0 +1,4 @@
+# Created by AnglerBerry - https://github.com/cinemapub/AnglerBerry
+# Comment the following line to enable
+#DHCPD_ENABLED="no"
+DHCPD_OPTS="-S"

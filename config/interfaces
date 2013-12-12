@@ -1,0 +1,15 @@
+# Created by AnglerBerry - https://github.com/cinemapub/AnglerBerry
+
+# loopback always on
+auto lo
+iface lo inet loopback
+
+# configure WAN side - gets IP over DHCP
+iface %IFWAN inet dhcp
+#iface eth1 inet dhcp
+
+iface %IFLAN inet static
+  address %IPLAN
+  netmask 255.255.255.0
+
+up iptables-restore < /etc/iptables.ipv4.nat
